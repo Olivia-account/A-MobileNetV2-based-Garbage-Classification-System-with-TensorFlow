@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Images for Label: {{ selected_label }}</title>
+</head>
+<body>
+    <h1>Images for Label: {{ selected_label }}</h1>
+    <p>Displaying images from index {{ start_index }} to {{ end_index }}</p>
+    <img src="data:image/png;base64,{{ image_data }}" alt="Selected Images">
+</body>
+</html>

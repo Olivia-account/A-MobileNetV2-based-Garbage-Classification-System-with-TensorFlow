@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Viewer</title>
+</head>
+<body>
+    <h1>Select a Label</h1>
+    <form action="/display_images/" method="post">
+        <select name="selected_label">
+            {% for label in labels %}
+                <option value="{{ label }}">{{ label }}</option>
+            {% endfor %}
+        </select>
+        <label for="start_index">Start Index:</label>
+        <input type="number" name="start_index" id="start_index" value="0">
+        <label for="end_index">End Index:</label>
+        <input type="number" name="end_index" id="end_index" value="10">
+        <button type="submit">Show Images</button>
+    </form>
+</body>
+</html>
